@@ -21,3 +21,4 @@ The vision of Smart Will is to revolutionize estate planning by providing a tran
 
 Smart Will is the future of inheritance management—secure, automated, and decentralized!
 
+![image](https://github.com/user-attachments/assets/7d99b95c-7afa-4568-8d11-88be8163cda6)
