@@ -1,0 +1,16 @@
+[package]
+name = "smartwill"
+version = "1.0.0"
+authors = []
+
+[addresses]
+MyModule = '0x6b351b3d5f2a7db86bcd4dbf18310292391b4d01a8c146da1aa17f5c4c02c859'
+
+[dev-addresses]
+
+[dependencies.AptosFramework]
+git = "https://github.com/aptos-labs/aptos-framework.git"
+rev = "mainnet"
+subdir = "aptos-framework"
+
+[dev-dependencies]
