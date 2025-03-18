@@ -19,6 +19,8 @@ The vision of Smart Will is to revolutionize estate planning by providing a tran
 - **User-Friendly Interface:** Simple UI for creating and claiming wills.
 - **Fast and Cost-Effective:** No lengthy legal processes, reducing delays and costs.
 
-Smart Will is the future of inheritance management—secure, automated, and decentralized!
+## Contract Address:
+0x6704bcfcc3b17dd29fcbd1844d4e55479ba14d08f892e60e1ef20fbab5214cbe
+![image](https://github.com/user-attachments/assets/bb7069e7-a94d-47e7-995d-8200365afcca)
 
-![image](https://github.com/user-attachments/assets/7d99b95c-7afa-4568-8d11-88be8163cda6)
+``
