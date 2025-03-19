@@ -6,7 +6,7 @@ let currentAccount = null;
 // Connect to Welldone wallet
 async function connectWallet() {
     try {
-        if (!window.welldone) {
+        if (!window.ethereum || !window.welldone) {
             showMessage("Please install the Welldone wallet extension", "error");
             return null;
         }
