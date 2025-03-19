@@ -20,7 +20,6 @@ The vision of Smart Will is to revolutionize estate planning by providing a tran
 - **Fast and Cost-Effective:** No lengthy legal processes, reducing delays and costs.
 
 ## Contract Address:
-0x6704bcfcc3b17dd29fcbd1844d4e55479ba14d08f892e60e1ef20fbab5214cbe
+`0x6704bcfcc3b17dd29fcbd1844d4e55479ba14d08f892e60e1ef20fbab5214cbe`
 ![image](https://github.com/user-attachments/assets/bb7069e7-a94d-47e7-995d-8200365afcca)
 
-``
