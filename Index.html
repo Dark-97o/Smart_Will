@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Will Platform</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Smart Will Platform</h1>
+        
+        <div class="wallet-container">
+            <span id="wallet-status">Wallet Not Connected</span>
+            <button id="connect-wallet">Connect Wallet</button>
+        </div>
+        
+        <div class="tabs">
+            <div class="tab active" onclick="switchTab('create')">Create Will</div>
+            <div class="tab" onclick="switchTab('claim')">Claim Inheritance</div>
+            <div class="tab" onclick="switchTab('manage')">Manage Wills</div>
+        </div>
+        
+        <div id="create-section" class="tab-content active">
+            <h2>Create New Will</h2>
+            <div class="form-group">
+                <label for="beneficiary">Beneficiary Address:</label>
+                <input type="text" id="beneficiary" placeholder="0x...">
+            </div>
+            <div class="form-group">
+                <label for="amount">Amount (APT):</label>
+                <input type="number" id="amount" placeholder="0.0" step="0.1" min="0">
+            </div>
+            <button onclick="createWill()">Create Will</button>
+        </div>
+        
+        <div id="claim-section" class="tab-content">
+            <h2>Claim Inheritance</h2>
+            <div class="form-group">
+                <label for="owner-address">Owner Address:</label>
+                <input type="text" id="owner-address" placeholder="0x...">
+            </div>
+            <button onclick="claimInheritance()">Claim Inheritance</button>
+        </div>
+        
+        <div id="manage-section" class="tab-content">
+            <h2>Manage Your Wills</h2>
+            <button onclick="loadWills()">Refresh My Wills</button>
+            <div class="transaction-list" id="will-list">
+                <!-- Will items will be displayed here -->
+            </div>
+        </div>
+        
+        <div id="message"></div>
+    </div>
+</body>
+</html>
