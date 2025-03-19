@@ -3,15 +3,15 @@
 // Global variables
 let currentAccount = null;
 
-// Connect to Aptos wallet
+// Connect to Welldone wallet
 async function connectWallet() {
     try {
-        if (!window.aptos) {
-            showMessage("Please install the Aptos wallet extension", "error");
+        if (!window.welldone) {
+            showMessage("Please install the Welldone wallet extension", "error");
             return null;
         }
-        await window.aptos.connect();
-        const account = await window.aptos.account();
+        await window.welldone.connect();
+        const account = await window.welldone.account();
         currentAccount = account;
         updateWalletStatus(account);
         return account;
@@ -67,7 +67,7 @@ async function createWill() {
         };
         
         showMessage("Please confirm the transaction in your wallet...", "pending");
-        const pendingTransaction = await window.aptos.signAndSubmitTransaction(transaction);
+        const pendingTransaction = await window.welldone.signAndSubmitTransaction(transaction);
         
         showMessage("Will created successfully! Transaction hash: " + 
                    pendingTransaction.hash, "success");
@@ -107,7 +107,7 @@ async function claimInheritance() {
         };
         
         showMessage("Please confirm the transaction in your wallet...", "pending");
-        const pendingTransaction = await window.aptos.signAndSubmitTransaction(transaction);
+        const pendingTransaction = await window.welldone.signAndSubmitTransaction(transaction);
         
         showMessage("Claim submitted successfully! Transaction hash: " + 
                    pendingTransaction.hash, "success");
@@ -223,11 +223,12 @@ function switchTab(tabName) {
     }
 }
 
-// Validate Aptos address
+// Validate Welldone address
 function isValidAddress(address) {
     if (!address || address.trim() === "") return false;
     
-    // Aptos addresses start with "0x" and are 66 characters long (including 0x)
+    // Assuming Welldone uses the same address format as Aptos
+    // If not, update the regex accordingly
     const regex = /^0x[a-fA-F0-9]{64}$/;
     return regex.test(address);
 }
